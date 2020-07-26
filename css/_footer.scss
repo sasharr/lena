@@ -1,0 +1,36 @@
+footer {
+	margin: 40px 50px;
+	padding: 35px 50px;
+	border-top: thin solid #030927;
+	border-bottom: thin solid #030927;
+
+	.logo {
+		margin-bottom: 43px;
+
+		.logo-name {
+			font-size: 20px;
+		}
+
+		.logo-descr {
+			font-size: 15px;
+		}
+
+		.icon-logo {
+			width: 42px;
+			height: 35px;
+		}
+	}
+
+	ul {
+		li {
+			font-size: 14px;
+			line-height: 2;
+		}
+	}
+
+	.sotial {
+		margin-bottom: 5px;
+		padding: 0 5px;
+		font-size: 14px;
+	}
+}
