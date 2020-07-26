@@ -367,6 +367,13 @@ td,
 th {
   padding: 0; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
 @media print {
   *,
   *:before,
@@ -443,16 +450,18 @@ th {
     flex-wrap: wrap; }
 
 body {
-  background: #282828;
-  text-transform: uppercase; }
+  background: #282828; }
 
 .main-layout {
   width: 1280px;
   margin: 0 auto;
   background: #ffffff; }
 
+.inner-layout {
+  padding: 40px 100px; }
+
 .red {
-  background: #f91010; }
+  background: #ff0000; }
 
 .serve-block {
   position: relative; }
@@ -461,5 +470,95 @@ body {
     top: 50%;
     transform: translateY(-50%);
     color: #ffffff; }
+
+.contact-inner {
+  width: 470px;
+  border: thin solid #030927;
+  padding: 90px 20px; }
+
+.icon {
+  width: 40px;
+  height: 40px; }
+  .icon:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .icon.logo {
+    width: 58px;
+    height: 49px; }
+    .icon.logo:before {
+      background-image: url("../images/service.svg");
+      margin: 0 0 0 9px; }
+  .icon.vehicle:before {
+    background-image: url("../images/vehicle.svg"); }
+  .icon.wheeler:before {
+    background-image: url("../images/wheeler.svg"); }
+  .icon.fb:before {
+    background-image: url("../images/fb.svg"); }
+  .icon.insta:before {
+    background-image: url("../images/insta.svg"); }
+
+.checkmark:before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/checkmark.svg"); }
+
+body {
+  color: #030927;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Arial, sans-serif; }
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 40px 0; }
+
+.heading-white {
+  text-align: left;
+  font-size: 50px;
+  color: #ffffff; }
+
+p {
+  text-transform: none;
+  font-size: 30px; }
+
+button {
+  color: #ffffff;
+  font-size: 22px;
+  background: #ff0000;
+  border: thin solid #ff0000;
+  text-transform: lowercase;
+  padding: 20px 76px;
+  border-radius: 21px;
+  transition: .1ms ease-in; }
+  button:hover {
+    background: #ce0505;
+    border: thin solid #ce0505;
+    transition: .1ms ease-in; }
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #030927;
+  transition: .1ms ease-in; }
+  a:hover {
+    color: #ff0000;
+    transition: .1ms ease-in; }
+
+.logo .logo-name {
+  font-size: 30px; }
+.logo .logo-descr {
+  font-size: 24px; }
+
+.navigation {
+  width: 30%;
+  align-items: center; }
 
 /*# sourceMappingURL=index.css.map */

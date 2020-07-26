@@ -11,80 +11,151 @@
 <body>
 
 <main class="main-layout">
-  <header>
+  <header class="flex row space-between inner-layout">
     <div class="logo">
-      <span>Chicagoland</span>
-      <span>Road Service</span>
+      <div class="flex row align-center">
+        <p class="flex column align-right">
+          <span class="logo-name">Chicagoland</span>
+          <span class="logo-descr">Road Service</span>
+        </p>
+        <span class="icon logo"></span>
+      </div>
     </div>
-    <ul>
-      <li>About</li>
-      <li>Contact</li>
-      <li>Services</li>
+
+    <ul class="flex row space-around navigation">
+      <li><a href="#">Road assistance</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </header>
 
   <section class="serve-block">
     <img src="images/service-man.png" alt="Road Service">
-    <div class="serve-description">
-      <h1>We are open 24/7</h1>
-      <h2>We serve commercial fleets, truckload carries, heavy, medium and light
-        duty trucks, buses and vans in the Chicagoland, 24 hours a day, 7 days a week.</h2>
+    <div class="serve-description inner-layout">
+      <h1 class="heading-white">We are open 24/7</h1>
+      <p>We serve commercial fleets, truckload carries, heavy, medium and light
+        duty trucks, buses and vans in the Chicagoland, 24 hours a day, 7 days a week.</p>
       <button>
         Call now
       </button>
     </div>
   </section>
 
-  <section class="services">
+  <section class="services inner-layout">
     <h1>services</h1>
     <p>Chicagoland Road Service offers full maintenance and repair services for heavy
       vehicles (truck, semitraler). Here is a list of the services we offer:</p>
-    <div class="icons">
-      <span class="truck"></span>
-      <span class="car"></span>
+    <div class="flex row space-between">
+      <span class="icon vehicle"></span>
+      <span class="icon wheeler"></span>
     </div>
     <ul>
-      <li>Tire repair & replacement</li>
-      <li>Trailer repair & SERVICE</li>
-      <li>Minor mechanical repairs</li>
-      <li>Magor mechanical repairs</li>
-      <li>Our full of services includes, but not limited to</li>
+      <li class="checkmark">Tire repair & replacement
+        <ul>
+          <li>Tractor and trailer tires</li>
+          <li>New and recap tires available</li>
+          <li>National tire account billing</li>
+          <li>Spare swaps</li>
+          <li>Flat tire repairs</li>
+        </ul>
+      </li>
+
+      <li class="checkmark">Trailer repair & SERVICE
+        <ul>
+          <li>Air system</li>
+          <li>Electrical system</li>
+        </ul>
+      </li>
+
+      <li class="checkmark">Minor mechanical repairs
+        <ul>
+          <li>LED lights</li>
+          <li>Battery charging</li>
+          <li>Spare plugs</li>
+          <li>Sensor replacement</li>
+        </ul>
+      </li>
+
+      <li class="checkmark">Magor mechanical repairs
+        <ul>
+          <li>Engine diagnostics</li>
+          <li>Air system</li>
+          <li>Electrical system</li>
+          <li>Fuel system</li>
+          <li>Cooling system</li>
+        </ul>
+      </li>
+
+      <li class="checkmark">Our full of services includes, but not limited to
+      <ul>
+        <li>Full mechanical</li>
+        <li>Electrical</li>
+        <li>Tire service (all brands,
+          including new, used and retreat)</li>
+        <li>Towing services</li>
+        <li>Out of fuel</li>
+        <li>Jump starts</li>
+        <li>Roadside diagnosticks</li>
+        <li>Brakes</li>
+        <li>Air leaks</li>
+        <li>Belts and hoses</li>
+        <li>Trailer repairs</li>
+      </ul>
+      </li>
     </ul>
   </section>
 
   <section class="contact">
     <h1>Contact</h1>
-    <div class="red flex center align-center">
-      <div class="logo">
-        <span>Chicagoland</span>
-        <span>Road Service</span>
+    <div class="red flex center align-center inner-layout">
+      <div class="flex column center align-center contact-inner">
+        <div class="logo">
+          <div class="flex row align-center">
+            <div class="flex column align-right">
+              <span>Chicagoland</span>
+              <span>Road Service</span>
+            </div>
+            <span class="icon logo"></span>
+          </div>
+        </div>
+        <p>Contact us:</p>
+        <a href="">708-491-3538</a>
+        <a href="">chicagolandroadservice@gmail.com</a>
+        <p>24/7</p>
       </div>
-      <p>Contact us:</p>
-      <a href="">708-491-3538</a>
-      <p>24/7</p>
     </div>
 
   </section>
 
   <footer>
     <div class="logo">
-      <span>Chicagoland</span>
-      <span>Road Service</span>
+      <div class="flex row align-center">
+        <p class="flex column align-right">
+          <span>Chicagoland</span>
+          <span>Road Service</span>
+        </p>
+        <span class="icon logo"></span>
+      </div>
     </div>
 
-    <div class="flex row">
-      <ul>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Services</li>
+    <div class="flex row space-between">
+      <ul class="">
+        <li><a href="#">Road assistance</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <div>
-      <p>Follow us</p>
-      <ul>
-      <li>fb</li>
-      <li>insta</li>
-      </ul>
+
+      <div class="flex column center">
+        <span>Follow us</span>
+
+        <ul class="flex row space-between">
+          <li class="icon fb">
+            <a href="#"></a>
+          </li>
+          <li class="icon insta">
+            <a href="#"></a>
+          </li>
+        </ul>
       </div>
+
     </div>
   </footer>
 

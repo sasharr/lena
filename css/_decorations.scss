@@ -1,0 +1,61 @@
+.icon {
+	width: 40px;
+	height: 40px;
+
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&.logo {
+		width: 58px;
+		height: 49px;
+		&:before {
+			background-image: url("../images/service.svg");
+			margin: 0 0 0 9px;
+		}
+	}
+
+	&.vehicle {
+		&:before {
+			background-image: url("../images/vehicle.svg");
+		}
+	}
+
+	&.wheeler {
+		&:before {
+			background-image: url("../images/wheeler.svg");
+		}
+	}
+
+	&.fb {
+		&:before {
+			background-image: url("../images/fb.svg");
+		}
+	}
+
+	&.insta {
+		&:before {
+			background-image: url("../images/insta.svg");
+		}
+	}
+
+
+
+}
+
+.checkmark {
+	&:before {
+		display: inline-block;
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url("../images/checkmark.svg");
+	}
+}

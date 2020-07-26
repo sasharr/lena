@@ -50,7 +50,6 @@
 
 body {
 	background: #282828;
-	text-transform: uppercase;
 }
 
 .main-layout {
@@ -59,9 +58,15 @@ body {
 	background: #ffffff;
 }
 
-.red {
- background: #f91010;
+.inner-layout {
+	padding: 40px 100px;
 }
+
+.red {
+ background: #ff0000;
+}
+
+
 
 
 
@@ -76,3 +81,10 @@ body {
 		color: #ffffff;
 	}
 }
+
+.contact-inner {
+	width: 470px;
+	border: thin solid #030927;
+	padding: 90px 20px;
+}
+
