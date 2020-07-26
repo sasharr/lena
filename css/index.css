@@ -474,7 +474,36 @@ body {
 .contact-inner {
   width: 470px;
   border: thin solid #030927;
-  padding: 90px 20px; }
+  padding: 70px 20px; }
+  .contact-inner .logo {
+    margin-bottom: 60px; }
+    .contact-inner .logo .logo-name {
+      font-size: 20px; }
+    .contact-inner .logo .logo-descr {
+      font-size: 15px; }
+    .contact-inner .logo .icon-logo {
+      width: 42px;
+      height: 35px; }
+  .contact-inner p {
+    font-size: 16px; }
+  .contact-inner .link-phone {
+    color: #ffffff;
+    margin: 28px 0;
+    font-size: 36px;
+    transition: .1s ease-in; }
+    .contact-inner .link-phone:hover {
+      color: #030927;
+      transition: .1s ease-in; }
+  .contact-inner .link-mail {
+    margin-bottom: 28px;
+    font-size: 24px;
+    text-transform: lowercase; }
+    .contact-inner .link-mail:hover {
+      color: inherit;
+      text-decoration: underline;
+      transition: .1ms ease-in; }
+  .contact-inner .round-day {
+    font-size: 30px; }
 
 .icon {
   width: 40px;
@@ -486,10 +515,10 @@ body {
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat; }
-  .icon.logo {
+  .icon.icon-logo {
     width: 58px;
     height: 49px; }
-    .icon.logo:before {
+    .icon.icon-logo:before {
       background-image: url("../images/service.svg");
       margin: 0 0 0 9px; }
   .icon.vehicle:before {
@@ -520,12 +549,15 @@ h1 {
   font-size: 24px;
   margin: 40px 0; }
 
+p {
+  margin: 0; }
+
 .heading-white {
   text-align: left;
   font-size: 50px;
   color: #ffffff; }
 
-p {
+.lower {
   text-transform: none;
   font-size: 30px; }
 

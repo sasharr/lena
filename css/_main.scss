@@ -85,6 +85,55 @@ body {
 .contact-inner {
 	width: 470px;
 	border: thin solid #030927;
-	padding: 90px 20px;
+	padding: 70px 20px;
+
+	.logo {
+		margin-bottom: 60px;
+
+		.logo-name {
+			font-size: 20px;
+		}
+
+		.logo-descr {
+			font-size: 15px;
+		}
+
+		.icon-logo {
+			width: 42px;
+			height: 35px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.link-phone {
+        color: #ffffff;
+		margin: 28px 0;
+		font-size: 36px;
+		transition: .1s ease-in;
+
+		&:hover {
+			color: #030927;
+			transition: .1s ease-in;
+		}
+	}
+
+	.link-mail {
+		margin-bottom: 28px;
+		font-size: 24px;
+		text-transform: lowercase;
+
+		&:hover {
+			color: inherit;
+			text-decoration: underline;
+			transition: .1ms ease-in;
+		}
+	}
+
+	.round-day {
+		font-size: 30px;
+	}
 }
 
