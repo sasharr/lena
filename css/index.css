@@ -454,7 +454,7 @@ body {
   background: #282828; }
 
 .main-layout {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   background: #ffffff;
   padding-bottom: 20px; }
@@ -482,7 +482,7 @@ body {
     color: #ffffff; }
 
 .services-list {
-  width: 830px;
+  max-width: 830px;
   margin: 0 auto; }
   .services-list .checkmark {
     font-size: 18px;
@@ -639,7 +639,7 @@ a {
   font-weight: bold; }
 
 .navigation {
-  width: 30%;
+  width: 40%;
   align-items: center; }
 
 footer {
@@ -676,5 +676,21 @@ footer {
       content: "\2191";
       font-size: 20px;
       font-weight: bold; }
+
+@media only screen and (max-width: 770px) and (min-width: 320px) {
+  .inner-layout {
+    padding: 40px; } }
+@media only screen and (max-width: 666px) {
+  .navigation {
+    width: 100%;
+    flex-wrap: wrap; }
+
+  footer .back-to-top {
+    display: none; }
+
+  .services .flex.row {
+    flex-direction: column; }
+  .services .list-of-service {
+    width: 100%; } }
 
 /*# sourceMappingURL=index.css.map */
