@@ -14,6 +14,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -453,15 +454,24 @@ body {
   background: #282828; }
 
 .main-layout {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
-  background: #ffffff; }
+  background: #ffffff;
+  padding-bottom: 20px; }
 
 .inner-layout {
   padding: 40px 100px; }
 
 .red {
   background: #ff0000; }
+
+.half-black {
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; }
 
 .serve-block {
   position: relative; }
@@ -471,10 +481,25 @@ body {
     transform: translateY(-50%);
     color: #ffffff; }
 
+.services-list {
+  max-width: 830px;
+  margin: 0 auto; }
+  .services-list .checkmark {
+    font-size: 18px;
+    font-weight: bold; }
+  .services-list .checkmark-list {
+    margin: 18px 0; }
+    .services-list .checkmark-list li {
+      font-weight: normal;
+      text-transform: none;
+      font-size: 16px;
+      line-height: 1.5; }
+
 .contact-inner {
   width: 470px;
-  border: thin solid #030927;
-  padding: 70px 20px; }
+  border: thin solid #000000;
+  padding: 70px 20px;
+  color: #000000; }
   .contact-inner .logo {
     margin-bottom: 60px; }
     .contact-inner .logo .logo-name {
@@ -492,7 +517,7 @@ body {
     font-size: 36px;
     transition: .1s ease-in; }
     .contact-inner .link-phone:hover {
-      color: #030927;
+      color: #000000;
       transition: .1s ease-in; }
   .contact-inner .link-mail {
     margin-bottom: 28px;
@@ -505,16 +530,34 @@ body {
   .contact-inner .round-day {
     font-size: 30px; }
 
+.list-of-service {
+  width: 50%; }
+  .list-of-service .icon {
+    margin: 0 auto 20px; }
+  .list-of-service .checkmark {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; }
+  .list-of-service .checkmark-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 25px; }
+
 .icon {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .icon:before {
     display: block;
     content: "";
     width: 100%;
     height: 100%;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: center; }
   .icon.icon-logo {
     width: 58px;
     height: 49px; }
@@ -535,6 +578,7 @@ body {
   content: "";
   width: 20px;
   height: 20px;
+  margin-right: 5px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../images/checkmark.svg"); }
@@ -542,12 +586,13 @@ body {
 body {
   color: #030927;
   text-transform: uppercase;
-  font-family: "Helvetica Neue", Arial, sans-serif; }
+  font-family: 'PT Sans', Arial, sans-serif; }
 
 h1 {
   text-align: center;
   font-size: 24px;
-  margin: 40px 0; }
+  margin: 40px 0;
+  font-weight: bold; }
 
 p {
   margin: 0; }
@@ -559,7 +604,9 @@ p {
 
 .lower {
   text-transform: none;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-bottom: 40px;
+  line-height: 1.4; }
 
 button {
   color: #ffffff;
@@ -585,12 +632,65 @@ a {
     transition: .1ms ease-in; }
 
 .logo .logo-name {
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: bold; }
 .logo .logo-descr {
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: bold; }
 
 .navigation {
-  width: 30%;
+  width: 40%;
   align-items: center; }
+
+footer {
+  margin: 40px 50px;
+  padding: 35px 50px;
+  border-top: thin solid #030927;
+  border-bottom: thin solid #030927; }
+  footer .logo {
+    margin-bottom: 43px; }
+    footer .logo .logo-name {
+      font-size: 20px; }
+    footer .logo .logo-descr {
+      font-size: 15px; }
+    footer .logo .icon-logo {
+      width: 42px;
+      height: 35px; }
+  footer ul li {
+    font-size: 14px;
+    line-height: 2; }
+  footer .sotial {
+    margin-bottom: 5px;
+    padding: 0 10px;
+    font-size: 14px; }
+  footer .back-to-top {
+    width: 50px;
+    height: 50px;
+    border: thin solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .back-to-top:before {
+      content: "\2191";
+      font-size: 20px;
+      font-weight: bold; }
+
+@media only screen and (max-width: 770px) and (min-width: 320px) {
+  .inner-layout {
+    padding: 40px; } }
+@media only screen and (max-width: 666px) {
+  .navigation {
+    width: 100%;
+    flex-wrap: wrap; }
+
+  footer .back-to-top {
+    display: none; }
+
+  .services .flex.row {
+    flex-direction: column; }
+  .services .list-of-service {
+    width: 100%; } }
 
 /*# sourceMappingURL=index.css.map */
