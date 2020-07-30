@@ -12,7 +12,7 @@
 
 <main class="main-layout">
   <header class="flex row space-between inner-layout">
-    <div class="logo">
+    <div class="logo" id="header-logo">
       <div class="flex row align-center">
         <p class="flex column align-right">
           <span class="logo-name">Chicagoland</span>
@@ -23,8 +23,8 @@
     </div>
 
     <ul class="flex row space-around navigation">
-      <li><a href="#">Road assistance</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#services">Road assistance</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </header>
 
@@ -42,74 +42,80 @@
     </div>
   </section>
 
-  <section class="services inner-layout">
+  <section class="services inner-layout" id="services">
     <div class="services-list">
       <h1>services</h1>
       <p class="lower">Chicagoland Road Service offers full maintenance and repair services for heavy
         vehicles (truck, semitraler). Here is a list of the services we offer:</p>
-      <div class="flex row space-between">
-        <span class="icon vehicle"></span>
-        <span class="icon wheeler"></span>
-      </div>
-      <ul>
-        <li class="checkmark">Tire repair & replacement
-          <ul class="checkmark-list">
-            <li>Tractor and trailer tires</li>
-            <li>New and recap tires available</li>
-            <li>National tire account billing</li>
-            <li>Spare swaps</li>
-            <li>Flat tire repairs</li>
-          </ul>
-        </li>
-
-        <li class="checkmark">Trailer repair & SERVICE
-          <ul class="checkmark-list">
-            <li>Air system</li>
-            <li>Electrical system</li>
-          </ul>
-        </li>
-
-        <li class="checkmark">Minor mechanical repairs
-          <ul class="checkmark-list">
-            <li>LED lights</li>
-            <li>Battery charging</li>
-            <li>Spare plugs</li>
-            <li>Sensor replacement</li>
-          </ul>
-        </li>
-
-        <li class="checkmark">Magor mechanical repairs
-          <ul class="checkmark-list">
-            <li>Engine diagnostics</li>
-            <li>Air system</li>
-            <li>Electrical system</li>
-            <li>Fuel system</li>
-            <li>Cooling system</li>
-          </ul>
-        </li>
-
-        <li class="checkmark">Our full of services includes, but not limited to
-          <ul class="checkmark-list">
-            <li>Full mechanical</li>
-            <li>Electrical</li>
-            <li>Tire service (all brands,
-              including new, used and retreat)
+      <div class="flex row space-around">
+        <div class="list-of-service">
+          <span class="icon vehicle"></span>
+          <ul>
+            <li class="checkmark">Tire repair & replacement
+              <ul class="checkmark-list">
+                <li>Tractor and trailer tires</li>
+                <li>New and recap tires available</li>
+                <li>National tire account billing</li>
+                <li>Spare swaps</li>
+                <li>Flat tire repairs</li>
+              </ul>
             </li>
-            <li>Towing services</li>
-            <li>Out of fuel</li>
-            <li>Jump starts</li>
-            <li>Roadside diagnosticks</li>
-            <li>Brakes</li>
-            <li>Air leaks</li>
-            <li>Belts and hoses</li>
-            <li>Trailer repairs</li>
+
+            <li class="checkmark">Trailer repair & SERVICE
+              <ul class="checkmark-list">
+                <li>Air system</li>
+                <li>Electrical system</li>
+              </ul>
+            </li>
+
+            <li class="checkmark">Minor mechanical repairs
+              <ul class="checkmark-list">
+                <li>LED lights</li>
+                <li>Battery charging</li>
+                <li>Spare plugs</li>
+                <li>Sensor replacement</li>
+              </ul>
+            </li>
+
+            <li class="checkmark">Magor mechanical repairs
+              <ul class="checkmark-list">
+                <li>Engine diagnostics</li>
+                <li>Air system</li>
+                <li>Electrical system</li>
+                <li>Fuel system</li>
+                <li>Cooling system</li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+
+        <div class="list-of-service">
+          <span class="icon wheeler"></span>
+          <ul>
+            <li class="checkmark">Our full of services includes,<br> but not limited to
+              <ul class="checkmark-list">
+                <li>Full mechanical</li>
+                <li>Electrical</li>
+                <li>Tire service (all brands,
+                  including new, used and retreat)
+                </li>
+                <li>Towing services</li>
+                <li>Out of fuel</li>
+                <li>Jump starts</li>
+                <li>Roadside diagnosticks</li>
+                <li>Brakes</li>
+                <li>Air leaks</li>
+                <li>Belts and hoses</li>
+                <li>Trailer repairs</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <h1>Contact</h1>
     <div class="red flex center align-center inner-layout">
       <div class="flex column center align-center contact-inner">
@@ -123,8 +129,9 @@
           </div>
         </div>
         <p>Contact us:</p>
-        <a class="link-phone" href="">708-491-3538</a>
-        <a class="link-mail" href="">chicagolandroadservice@gmail.com</a>
+        <a class="link-phone" href="tel:708-491-3538">708-491-3538</a>
+        <a class="link-mail"
+           href="mailto:chicagolandroadservice@gmail.com">chicagolandroadservice@gmail.com</a>
         <p class="round-day">24/7</p>
       </div>
     </div>
@@ -144,8 +151,8 @@
 
     <div class="flex row space-between">
       <ul class="">
-        <li><a href="#">Road assistance</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#services">Road assistance</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div class="flex column center">
@@ -161,10 +168,16 @@
         </ul>
       </div>
 
+
+      <a href="#header-logo" class="back-to-top"></a>
+
     </div>
+
   </footer>
 
 </main>
 
 </body>
+<script src="jquery-3.2.1.js"></script>
+<script src="main.js"></script>
 </html>

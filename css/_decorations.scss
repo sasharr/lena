@@ -1,7 +1,9 @@
 .icon {
 	width: 40px;
 	height: 40px;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&:before {
 		display: block;
@@ -10,6 +12,7 @@
 		height: 100%;
 		background-size: contain;
 		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	&.icon-logo {

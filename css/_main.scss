@@ -168,3 +168,24 @@ body {
 	}
 }
 
+.list-of-service {
+	width: 50%;
+
+	.icon {
+		margin: 0 auto 20px;
+	}
+
+	.checkmark {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.checkmark-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: 25px;
+	}
+}
+
