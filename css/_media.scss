@@ -5,6 +5,19 @@
 }
 
 @media only screen and (max-width: 666px) {
+	h1 {
+		font-size: 30px!important;
+		margin: 0.67em 0;;
+	}
+
+	p {
+		font-size: 18px!important;
+	}
+
+	button {
+		padding: 10px 20px;
+	}
+
 	.navigation {
 		width: 100%;
 		flex-wrap: wrap;

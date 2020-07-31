@@ -35,21 +35,19 @@
         <h1 class="heading-white">We are open 24/7</h1>
         <p class="lower">We serve commercial fleets, truckload carries, heavy, medium and light
           duty trucks, buses and vans in the Chicagoland, 24 hours a day, 7 days a week.</p>
-        <button>
-          Call now
-        </button>
+        <button class="radius" id="popup-open">Call now</button>
       </div>
     </div>
   </section>
 
   <section class="services inner-layout" id="services">
     <div class="services-list">
-      <h1>services</h1>
+      <h1>Road assistance</h1>
       <p class="lower">Chicagoland Road Service offers full maintenance and repair services for heavy
         vehicles (truck, semitraler). Here is a list of the services we offer:</p>
       <div class="flex row space-around">
         <div class="list-of-service">
-          <span class="icon vehicle"></span>
+          <span class="icon wheeler"></span>
           <ul>
             <li class="checkmark">Tire repair & replacement
               <ul class="checkmark-list">
@@ -90,7 +88,7 @@
         </div>
 
         <div class="list-of-service">
-          <span class="icon wheeler"></span>
+          <span class="icon vehicle"></span>
           <ul>
             <li class="checkmark">Our full of services includes,<br> but not limited to
               <ul class="checkmark-list">
@@ -172,6 +170,34 @@
     </div>
 
   </footer>
+
+  <div class="popup">
+    <div class="popup-container">
+      <div class="logo">
+        <div class="flex row align-center">
+          <p class="flex column align-right">
+            <span class="logo-name">Chicagoland</span>
+            <span class="logo-descr">Road Service</span>
+          </p>
+          <span class="icon icon-logo"></span>
+        </div>
+      </div>
+      <div class="popup-content">
+      <img src="images/popup.png" alt="Road Service">
+        <div class="half-black flex center">
+          <div class="inner-layout flex column center align-center">
+            <p class="popup-contact">Contact us</p>
+            <a class="link-phone" href="tel:708-491-3538">708-491-3538</a>
+            <div>
+              <button class="transparent"><a href="tel:708-491-3538">Call now</a></button>
+              <button id="popup-close">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </main>
 

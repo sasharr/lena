@@ -312,6 +312,7 @@ sub {
 
 img {
 	border: 0;
+	width: 100%;
 	@if $legacy_browser_support {
 		*-ms-interpolation-mode: bicubic; /* 2 */
 	}

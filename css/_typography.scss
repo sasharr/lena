@@ -38,13 +38,38 @@ button {
 	border: thin solid #ff0000;
 	text-transform: lowercase;
 	padding: 20px 76px;
-	border-radius: 21px;
 	transition: .1ms ease-in;
 
 	&:hover {
 		background: #ce0505;
 		border: thin solid #ce0505;
 		transition: .1ms ease-in;
+	}
+
+	&.transparent {
+		background: transparent;
+		border: thin solid #ffffff;
+		color: #ffffff;
+		margin-right: 10px;
+
+		&:hover {
+			opacity: .8;
+			transition: .1ms ease-in;
+		}
+	}
+
+	&.radius {
+		border-radius: 21px;
+	}
+
+	a {
+		color: #ffffff;
+		font-size: 22px;
+
+		&:hover {
+			color: #ffffff;
+			opacity: .8;
+		}
 	}
 }
 
